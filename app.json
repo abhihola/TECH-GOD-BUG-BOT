@@ -1,0 +1,21 @@
+{
+  "name": "WhatsApp-Bot",
+  "description": "A simple WhatsApp bot using Baileys.",
+  "repository": "https://github.com/techgod143/whatsapp-bot",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "env": {
+    "WHATSAPP_PHONE_NUMBER": {
+      "description": "Your WhatsApp phone number in international format (e.g., +911234567890)"
+    },
+    "BOT_OWNER": {
+      "description": "Phone number of the bot owner (e.g., +917466008456)"
+    }
+  }
+}
